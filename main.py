@@ -20,8 +20,12 @@ criteria (rubric: on-topic /10, twist /15, freshness /10, voice /10,
 tightness /5) and breaks ties with a head-to-head proxy-judge
 tournament (deepseek-v4.1-flash-free standing in for the house judge
 z-ai/glm-5.3-flash, same brief, round-robin, both label orders, house
-scoring). The tournament winner is picked. Deterministic: no network,
-no input, no randomness.
+scoring). The tournament winner is picked. Tournament caveat: 3 of the
+15 games ended 0.50-0.50 on proxy-judge non-verdicts (two unparsed
+reasons, one 429, one disconnect); the winner's ranking rests on its
+three decisive wins (0.85, 0.85, 0.80), and the runner-up beat the
+winner head-to-head 0.80-0.20 but tied its other three games on
+non-verdicts. Deterministic: no network, no input, no randomness.
 """
 
 import json
